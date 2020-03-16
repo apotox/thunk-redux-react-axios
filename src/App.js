@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import {useDispatch} from 'react-redux'
 import ListTodo from './components/ListTodo/ListTodo';
-
+import {SET_ITEMS} from './components/ListTodo/ListTodo.actions'
 
 const TEST_LIST_ITEMS = [{
   id:1,

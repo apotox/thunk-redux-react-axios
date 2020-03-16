@@ -1,7 +1,9 @@
 
+
+
 import React from 'react'
 import {useDispatch} from 'react-redux'
-
+import {DELETE_ITEMS} from './itemTodo.actions'
 //ItemTodo is an "li" element
 const ItemTodo=({item})=>{
 

@@ -1,13 +1,13 @@
 
 
 import axios from 'axios'
-import {combinRedcers, createStore, applyMiddleware} from 'redux'
+import {combineReducers, createStore, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
-
+import listTodoReducer from './components/ListTodo/ListTodo.reducer'
 const API_ENDPOINT = "https://api...."
 
 //combine project reducers
-const reducers = combinRedcers({
+const reducers = combineReducers({
     listTodoReducer
 });
 
